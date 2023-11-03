@@ -1,0 +1,12 @@
+.divestyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  width: 60rem;
+  padding: 1rem;
+  margin: 2rem;
+  border: solid blue 1px;
+  border-radius: 2rem;
+}

@@ -1,0 +1,32 @@
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 20rem;
+  position: initial;
+  border: solid red 1px;
+  padding: 2rem;
+}
+
+button {
+  width: 5rem;
+}
+
+.input1 {
+  border-radius: 4rem;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
