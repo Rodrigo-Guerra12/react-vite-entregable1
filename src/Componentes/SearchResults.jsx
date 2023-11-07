@@ -2,6 +2,7 @@ import { useState } from "react";
 import classes from "./SearchResults.module.css";
 import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
+import { Button } from "@mui/material";
 
 function SearchResults({ results }) {
   const [showDescription, setShowDescription] = useState(null);
@@ -18,6 +19,7 @@ function SearchResults({ results }) {
             <>
               <div className={classes.cardcontent}>
                 <Card
+                  className={classes.hoverCard}
                   sx={{
                     margin: 2,
                     alignContent: "center",
@@ -40,22 +42,31 @@ function SearchResults({ results }) {
                     {showDescription === index ? (
                       <>
                         <div className={classes.descriptionstyle}>
+                          <strong>Nombre de Usuario:</strong>{" "}
+                          {result.owner.login}
                           {/* <strong>Descripción:</strong> {result.description}{" "} */}
                           <strong>Fecha de creacion:</strong>
                           {result.created_at}
                           <strong>Estrellas:</strong> {result.stargazers_count}
-                          <strong>Nombre de Usuario:</strong>{" "}
-                          {result.owner.login}
+                          <a
+                            href={`https://github.com/${result.owner.login}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {" "}
+                            Ir al perfil
+                          </a>
                         </div>
                         <br />
                       </>
                     ) : null}
-                    <button
-                      className={classes.btn1}
+                    <Button
+                      size="small"
+                      variant="contained"
                       onClick={() => toggleDescription(index)}
                     >
                       {showDescription === index ? "Ocultar" : "Más"}
-                    </button>
+                    </Button>
                   </li>
                 </Card>
               </div>
