@@ -43,20 +43,29 @@ function SearchBar() {
 
   return (
     <>
-      <div className={classes.contenido}>
-        <div className={classes.searchbar}>
-          <TextField
-            className={classes.input1}
-            type="text"
-            placeholder="Buscar repositorios"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <Button variant="contained" onClick={handleSearch}>
-            Buscar
-          </Button>
+      <div>
+        <div className={classes.divsearch}>
+          <img
+            className={classes.imggit}
+            src="https://i0.wp.com/www.globalemancipation.ngo/wp-content/uploads/2017/09/github-logo.png?ssl=1"
+          ></img>
+          <div className={classes.inputui}>
+            <TextField
+              type="text"
+              placeholder="Buscar repositorios"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+          <div>
+            <Button size="small" variant="contained" onClick={handleSearch}>
+              Buscar
+            </Button>
+          </div>
         </div>
+
         <SearchResults results={searchResults} />
+
         <div className={classes.pagination}>
           <footer>
             <Button
@@ -65,7 +74,7 @@ function SearchBar() {
             >
               Anterior
             </Button>
-            <p>Pagina</p>
+
             {currentPage}
             <Button onClick={() => setCurrentPage(currentPage + 1)}>
               Siguiente

@@ -1,82 +1,11 @@
-li {
-  margin: 1rem;
+.descriptionstyle {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-} */
 .imgstyle {
-  border: solid rgb(85, 70, 70);
-  border-radius: 50px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  position: relative;
-  margin-top: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-strong {
-  display: flex;
-  margin: 0.3rem;
-  font-size: 10px;
-}
-.cardcontent {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid rgb(85, 70, 70) 1px;
-  border-radius: 2rem;
-  margin: 2rem;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
-  width: 20%;
-}
-
-.cardcontent:hover {
-  box-shadow: 0px 0px 10px 10px rgba(2, 26, 244, 0.75);
-  scale: 1.1;
-}
-
-/* .hola {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
-.btn1 {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 10px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-.btn1:active {
-  box-shadow: 0px 0px 10px 10px rgba(26, 1, 254, 0.75);
-  transition: 20ms;
+  border-radius: 10rem;
+  margin: 1vh;
+  width: 5rem;
+  height: 5rem;
 }
